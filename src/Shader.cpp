@@ -79,7 +79,7 @@ void Shader::SetFloat(const char* name, float value, bool use_shader) {
 	glUniform1f(GetLocation(name), value);
 }
 
-void Shader::SetMat4(const char* name, glm::mat4 matrix, bool use_shader = false) {
+void Shader::SetMat4(const char* name, glm::mat4 matrix, bool use_shader) {
 	if (use_shader) this->Use();
 
 	// putting in 1 matrix
